@@ -68,7 +68,7 @@ spec:
         volumeMounts:
         - name: wp-pv-claim
           mountPath: /var/www/html
-      volumes:
-      - name: wp-pv-claim
-        persistentVolumeClaim:
-          claimName: wp-pv-claim
+#      volumes:
+#      - name: wp-pv-claim
+#        persistentVolumeClaim:
+#          claimName: wp-pv-claim
