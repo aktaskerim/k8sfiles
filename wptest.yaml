@@ -13,7 +13,7 @@ spec:
   volumeMode: Filesystem
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -24,13 +24,13 @@ metadata:
     tier: test
     app: wordpress
 spec:
-  storageClassName: "longhorn"
+  storageClassName: longhorn
   accessModes:
     - ReadWriteOnce
   volumeMode: Filesystem
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
 ---
 apiVersion: apps/v1
 kind: Deployment
