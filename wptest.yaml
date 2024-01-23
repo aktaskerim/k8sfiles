@@ -7,7 +7,6 @@ metadata:
     tier: test
     app: mysql
 spec:
-  storageClassName: longhorn
   accessModes:
     - ReadWriteOnce
   volumeMode: Filesystem
@@ -24,7 +23,6 @@ metadata:
     tier: test
     app: wordpress
 spec:
-  storageClassName: longhorn
   accessModes:
     - ReadWriteOnce
   volumeMode: Filesystem
