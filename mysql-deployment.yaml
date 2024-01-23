@@ -57,10 +57,7 @@ spec:
             cpu: "250m"           
         env:
         - name: MYSQL_ROOT_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: mysql-pass
-              key: password
+          value: password
         - name: MYSQL_DATABASE
           value: wordpress
         - name: MYSQL_USER
