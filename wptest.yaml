@@ -39,10 +39,6 @@ metadata:
     tier: test
     app: mysql
 spec:
-  selector:
-    matchLabels:
-      tier: test
-      app: mysql
   strategy:
     type: Recreate
   template:
@@ -99,10 +95,6 @@ metadata:
     tier: test
     app: wordpress
 spec:
-  selector:
-    matchLabels:
-      tier: test
-      app: wordpress
   strategy:
     type: Recreate
   template:
