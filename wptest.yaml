@@ -24,7 +24,7 @@ metadata:
     tier: test
     app: wordpress
 spec:
-  storageClassName: longhorn
+  storageClassName: "longhorn"
   accessModes:
     - ReadWriteOnce
   volumeMode: Filesystem
