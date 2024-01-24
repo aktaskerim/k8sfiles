@@ -65,10 +65,10 @@ spec:
         ports:
         - containerPort: 80
           name: wordpress
-#        volumeMounts:
-#        - name: wp-pv-claim
-#          mountPath: /var/www/html
-#      volumes:
-#      - name: wp-pv-claim
-#        persistentVolumeClaim:
-#          claimName: wp-pv-claim
+        volumeMounts:
+        - name: wp-pv-claim
+          mountPath: /var/www/html
+      volumes:
+      - name: wp-pv-claim
+        persistentVolumeClaim:
+          claimName: wp-pv-claim
