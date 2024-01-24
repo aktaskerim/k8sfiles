@@ -21,7 +21,6 @@ metadata:
     app: wordpress
   namespace:  apps
 spec:
-  storageClassName: longhorn
   accessModes:
     - ReadWriteOnce
   resources:
