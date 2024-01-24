@@ -19,6 +19,7 @@ metadata:
   name: wp-pv-claim
   labels:
     app: wordpress
+    tier: wordpress-mysql
   namespace:  apps
 spec:
   storageClassName: longhorn
