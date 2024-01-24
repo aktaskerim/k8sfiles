@@ -21,6 +21,7 @@ metadata:
     app: wordpress
   namespace:  apps
 spec:
+  storageClassName: storage
   accessModes:
     - ReadWriteOnce
   resources:

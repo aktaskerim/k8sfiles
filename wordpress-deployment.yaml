@@ -21,7 +21,7 @@ metadata:
     app: wordpress
   namespace:  apps
 spec:
-  storageClassName: longhorn
+  storageClassName: storage
   accessModes:
     - ReadWriteOnce
   resources:
@@ -66,9 +66,9 @@ spec:
         - containerPort: 80
           name: wordpress
         volumeMounts:
-        - name: wp-pv-claim
+        - name: wp-pv
           mountPath: /var/www/html
       volumes:
-      - name: wp-pv-claim
+      - name: wp-pv
         persistentVolumeClaim:
           claimName: wp-pv-claim
